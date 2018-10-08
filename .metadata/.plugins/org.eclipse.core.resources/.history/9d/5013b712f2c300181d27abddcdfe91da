@@ -1,0 +1,15 @@
+package com.currency.conversion;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.currency.conversion.bean.CurrencyConversionBean;
+
+@FeignClient(name="currency-exchange-service", url="http://localhost:8000")
+public interface CurrencyExchangeProxy {
+	
+	@GetMapping("currency-exchange/from/{from}/to/{to}")
+	public CurrencyConversionBean reterive(@PathVariable(nqme="from") String from, @PathVariable String to);
+	
+}

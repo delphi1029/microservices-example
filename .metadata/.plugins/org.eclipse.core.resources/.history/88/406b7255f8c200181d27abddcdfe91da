@@ -1,0 +1,12 @@
+package com.currency.exchange;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CurrencyExchangeController {
+	
+	public ExchangeValue reterive() {
+		
+	}
+
+}

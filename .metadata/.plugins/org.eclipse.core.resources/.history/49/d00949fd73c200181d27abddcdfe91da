@@ -1,0 +1,13 @@
+package com.currency.limit.service;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LimitServiceResource {
+	
+	@GetMapping("/limits")
+	public LimitServiceConfiguration retrieve() {
+		return new LimitServiceConfiguration();
+	}
+
+}

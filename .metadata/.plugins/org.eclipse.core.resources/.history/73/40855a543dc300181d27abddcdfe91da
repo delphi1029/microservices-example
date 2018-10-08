@@ -1,0 +1,10 @@
+package com.currency.exchange.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.currency.exchange.bean.ExchangeValue;
+
+public class CurrencyExchangeRepository implements JpaRepository<ExchangeValue, Long>{
+	
+
+}

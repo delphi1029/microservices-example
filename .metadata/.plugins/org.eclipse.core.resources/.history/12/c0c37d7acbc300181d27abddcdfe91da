@@ -1,0 +1,14 @@
+package com.currency.conversion;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import com.currency.conversion.bean.CurrencyConversionBean;
+
+@RestController
+public class CurrencyConversionController {
+	
+	@GetMapping("/")
+	public CurrencyConversionBean convertCurrency() {
+		
+	}
+
+}

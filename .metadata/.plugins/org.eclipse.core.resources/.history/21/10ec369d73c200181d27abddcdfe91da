@@ -1,0 +1,8 @@
+package com.currency.limit.service;
+
+public class LimitServiceConfiguration {
+	
+	private int minimum;
+	private int maximum;
+
+}

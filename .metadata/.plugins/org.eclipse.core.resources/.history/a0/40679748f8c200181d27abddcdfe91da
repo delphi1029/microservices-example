@@ -1,0 +1,33 @@
+package com.currency.exchange.bean;
+
+import java.math.BigDecimal;
+
+public class ExchangeValue {
+	
+	private Long id;
+	private String from;
+	private String to;
+	private BigDecimal conversionMultiple;
+	
+	
+	
+	public ExchangeValue() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Long getId() {
+		return id;
+	}
+	public String getFrom() {
+		return from;
+	}
+	public String getTo() {
+		return to;
+	}
+	public BigDecimal getConversionMultiple() {
+		return conversionMultiple;
+	}
+	
+	
+
+}

@@ -1,0 +1,8 @@
+package com.currency.conversion.bean;
+
+public class CurrencyConversionBean {
+	
+	private Long id;
+	
+
+}

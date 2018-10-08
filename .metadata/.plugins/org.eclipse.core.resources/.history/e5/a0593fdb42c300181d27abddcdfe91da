@@ -1,0 +1,9 @@
+package com.currency.conversion;
+
+public class CurrencyConversionController {
+	
+	public CurrencyConversionBean convertCurrency() {
+		
+	}
+
+}

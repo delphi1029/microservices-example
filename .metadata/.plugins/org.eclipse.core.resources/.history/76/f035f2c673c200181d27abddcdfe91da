@@ -1,0 +1,11 @@
+package com.currency.limit.service;
+
+@RestController
+public class LimitServiceResource {
+	
+	
+	public LimitServiceConfiguration retrieve() {
+		return new LimitServiceConfiguration();
+	}
+
+}

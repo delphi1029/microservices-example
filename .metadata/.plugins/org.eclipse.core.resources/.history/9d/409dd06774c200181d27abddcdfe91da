@@ -1,0 +1,5 @@
+package com.currency.limit.service.configuration;
+
+public class Configuration {
+
+}

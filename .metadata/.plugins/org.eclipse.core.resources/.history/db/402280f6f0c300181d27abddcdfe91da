@@ -1,0 +1,6 @@
+package com.currency.conversion;
+
+@FeignClient
+public class CurrencyExchangeProxy {
+
+}
