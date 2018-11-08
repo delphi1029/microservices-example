@@ -29,15 +29,15 @@ public class App
     	  Session session = null;
     	try {
     		
-    		Instructor ins = new Instructor("Deepak","Lamba","dd@dd.com");
+    		Instructor ins = new Instructor("Sunny","Lamba","ss@ss.com");
     		InstructorDetail detail = new InstructorDetail("youtube://abc.channel","driving");
     		ins.setInstructorDetail(detail);
     		
-    		Course c1 = new Course("Title 1");
-    		Course c2 = new Course("Title 2");
-    		Course c3 = new Course("Title 3");
-    		Course c4 = new Course("Title 4");
-    		Course c5 = new Course("Title 5");
+    		Course c1 = new Course("Title 12");
+    		Course c2 = new Course("Title 22");
+    		Course c3 = new Course("Title 32");
+    		Course c4 = new Course("Title 42");
+    		Course c5 = new Course("Title 52");
     		
     		c1.addReview(new Review("Hello"));
     		c1.addReview(new Review("Hi"));
@@ -54,8 +54,9 @@ public class App
    
     		session = factory.getCurrentSession();
     		Transaction trans = session.beginTransaction();
-    		session.save(ins);
+    		//session.save(ins);
     		//System.out.println("hello");
+    		Instructor i = session.get(Instructor.class, 5L);
     		trans.commit();
     		//session.close();
       		//System.out.println(ins.toString());

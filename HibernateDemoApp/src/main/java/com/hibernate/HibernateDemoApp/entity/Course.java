@@ -15,6 +15,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 @Entity
 @Table(name="course")
 public class Course {
@@ -33,6 +36,7 @@ public class Course {
 	
 	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	@JoinColumn(name="course_id")
+	@Fetch(FetchMode.SUBSELECT)
 	private List<Review> reviews;
 
 	public Course(String title) {
